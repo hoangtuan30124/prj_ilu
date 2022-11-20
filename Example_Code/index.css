@@ -1,0 +1,89 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400|Raleway:300);
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+html {
+    font-family: "Open Sans", Helvetica, arial, sans-serif;
+  }
+  html *,
+  html *:before,
+  html *:after {
+    box-sizing: border-box;
+    transition: 0.5s ease-in-out;
+  }
+  html i, html em,
+  html b, html strong,
+  html span {
+    transition: none;
+  }
+  
+  *:before,
+  *:after {
+    z-index: -1;
+  }
+  
+  h1,
+  h4 {
+    font-family: "Raleway", "Open Sans", sans-serif;
+    margin: 0;
+    line-height: 1;
+  }
+  
+  a {
+    text-decoration: none;
+    line-height: 80px;
+    color: black;
+  }
+
+.warea {
+    margin: 0 auto;
+    display: inline-block;
+}
+
+/*set background and blur effect*/
+.bg {
+    background-image: url("Image/Background.JPG");
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/*box text and effect*/
+.bg-text {
+    background-color: rgb(255, 255, 255); /* Fallback color */
+    background-color: rgba(255, 255, 255, 0.4); /* Black w/opacity/see-through */
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    border: 3px solid #ffffff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+    transition: all .5s ease-in-out;
+}
+
+.form-floating {
+    color: black;
+}
+
+.form-control {
+    resize: none;
+    display: block;
+    border: 1px solid;
+    margin-bottom: 15px;
+}
+
+.btn btn-outline-danger {
+    margin: auto;
+    display: inline-block;
+}

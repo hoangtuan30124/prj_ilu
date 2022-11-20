@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Pacifico', cursive;
+
+}
+
+.bg {
+    background-color: blueviolet;
+    background-image: url(/img/background_login.webp);
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*filter: blur(8px);
+    -webkit-filter: blur(8px);*/
+    background-position: center;
+    z-index: -1;
+}
+
+.content {
+    position: absolute;
+    background-color: rgb(255, 255, 255, 0.4);
+    height: 80%;
+    width: 80%;
+    top: 10%;
+    left: 10%;
+    transform: translate(0.75%, 0.5%);
+    border: 3px solid #ffffff;
+    z-index: 3;
+}
+
+.content > .avt-area {
+    position: fixed;
+    height: 100%;
+    width: 50%;
+}
+
+.content > .login-area {
+    position: fixed;
+    /*background-color: rgb(208, 92, 169);*/
+    height: 100%;
+    width: 50%;
+    left: 50%;
+}
+
+.content > .avt-area > .avatar {
+    position: absolute;
+    top: 25%;
+    left: 15%;
+    background-color: brown;
+    background-image: url(/img/Screenshot_2022-11-20-21-07-21-52_9d50f6fcef3be7ea747098d50d8a06fa.jpg);
+    width: 50%;
+    padding-top: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 30px;
+    border: 3px solid #ffffff;
+    transform: translate(-1%, -5%);
+}
+
+.content > .login-area > .text-and-input{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+    width: 90%;
+    text-align: center;
+}
+
+/*.content > .login-area > .text-and-input > .say-something > .text > h1 {
+    padding-bottom: 30px;
+}*/
+
+.content > .login-area > .text-and-input > .say-something {
+    display: flex;
+    padding-bottom: 30px;
+}
+
+img {
+    max-width: 50%
+}
+  
+.image {
+    flex-basis: 40%;
+    cursor: pointer;
+}
+
+.image:hover {
+    animation: bounce 1s linear;
+}
+
+.text {
+    font-size: 20px;
+    padding-left: 20px;
+}
+
+.letter {
+    position: absolute;
+    top: 0%;
+    background-color: rgb(113, 177, 223);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*filter: blur(8px);
+    -webkit-filter: blur(8px);*/
+    background-position: center;
+    z-index: -1;
+}
+
+
+@keyframes bounce {
+    20%, 50%, 80%, to {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    70% {
+        transform: translateY(-15px);
+    }
+    90% {
+        transform: translateY(-4px);
+    }
+}
